@@ -52,4 +52,4 @@ console.log(exampleArray);
 //console.log(exampleArray2);
 
 let studentNames = ["Dip", "Ram", "shina"];
-console.log(studentNames)
+console.log(studentNames);
