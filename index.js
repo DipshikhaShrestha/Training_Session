@@ -8,48 +8,17 @@
 //null
 //underfined
 
-let a = 1; //number
-let b = "Hello world"; //string
-let c = true; //booleam
-let d = 1.5; //float
+let firstLetter = "Hello";
+let secondLetter = "world";
+let thirdLetter = firstLetter + secondLetter
+console.log("Length of third letter is: ",thirdLetter.length);
 
-console.log(a);
+//
+let example = "Hello World IIMS";
+console.log(example.length);
 
-a = "IIMS"
-
-console.log(a);
-
-const example = "Hello world";
-
-console.log(example);
-
-//example = "IIMS"; this is error const varable ma re assign garna mildaina
-//console.log(example);
-
-let iims = null;
-console.log(iims);
-
-
-//object banauni ani value rakhni 
-let person = {
-   name: 'Dipshikha',
-   age: 20,
-   address: "Kathmandu",
-   phone: 9880162286,
-   location:{
-       lattitude: 76478,
-       longitude: 637783
-   }
-};
-console.log("This person name is:", person.name);
-console.log("This person address is:", person.address);
-console.log("This person location is:", person.location);
-
-let exampleArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-//let exampleArray2 = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-//another way of adding variables
-console.log(exampleArray);
-//console.log(exampleArray2);
-
-let studentNames = ["Dip", "Ram", "shina"];
-console.log(studentNames);
+//
+let firstWord = "Hello";
+let secondWord = "World";
+let replaceWord = firstWord.concat(lastWord);
+console.log(concat.Word);
