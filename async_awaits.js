@@ -47,4 +47,6 @@ updateName(2, "Deepa");
 //annoymoums function name deyena vani ani auto call function ko lagi 
 (function(){ //we can use only => too like (() => {..})
 console.log("hello world");
+
 });
+//race chito promise excute huni lai run garcha

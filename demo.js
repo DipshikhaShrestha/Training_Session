@@ -58,3 +58,23 @@ Promise.race([getUserDetail1(), getUserDetail2()])
 .catch((error) => {
     console.log("Error fetching the user details", error);
 });
+
+// //iterators
+// let result = ["getUserDetail1", "getUserDetail2"];
+// //for of: array element provide garcha
+// for(let result of getUserDetail1){
+//     console.log("getUserDetail1.data", result);
+// };
+
+// //object: array object provide garcha
+// let objectExample = {
+//     name: "Dipa",
+//     age: 20,
+//     address: "kathmandu",
+// }
+// //for in
+// for(let obj in objectExample){
+// console.log("objectExample", objectExample[obj]);
+// }
+// console.log(Object.keys(objectExample));
+// console.log(Object.values(objectExample));
