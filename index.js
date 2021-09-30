@@ -18,7 +18,7 @@ let example = "Hello World IIMS";
 console.log(example.length);
 
 //
-let firstWord = "Hello";
-let secondWord = "World";
-let replaceWord = firstWord.concat(lastWord);
-console.log(concat.Word);
+//let firstWord = "Hello";
+//let secondWord = "World";
+//let replaceWord = firstWord.concat(lastWord);
+//console.log(concat.Word);

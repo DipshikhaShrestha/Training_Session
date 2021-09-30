@@ -37,5 +37,5 @@
 // //parseInt changes into number ani add huncha 
 
 let a = 2;
-a = a + a; // a -=a;
+a = a + a; // a +=a;
 console.log(a);
