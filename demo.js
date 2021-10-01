@@ -35,7 +35,7 @@ const getUserDetail2 = () => {
 //Normal Promise
 getUserDetail1()
 .then ((result) => {
-    console.log("User Details", result)
+    console.log("Details of the user", result)
 })
 .catch((error) => {
     console.log("Error fetching the user details", error);
@@ -59,22 +59,25 @@ Promise.race([getUserDetail1(), getUserDetail2()])
     console.log("Error fetching the user details", error);
 });
 
-// //iterators
-// let result = ["getUserDetail1", "getUserDetail2"];
-// //for of: array element provide garcha
-// for(let result of getUserDetail1){
-//     console.log("getUserDetail1.data", result);
-// };
 
-// //object: array object provide garcha
-// let objectExample = {
-//     name: "Dipa",
-//     age: 20,
-//     address: "kathmandu",
-// }
-// //for in
-// for(let obj in objectExample){
-// console.log("objectExample", objectExample[obj]);
-// }
-// console.log(Object.keys(objectExample));
-// console.log(Object.values(objectExample));
+// let userDetail = () => new Promise((resolve, reject) => {
+//     for (let detail of getUserDetail1) {
+//         console.log(detail);
+//     }
+// })
+getUserDetail2()
+    .then((result) => {
+        const {data} = result;
+        const actualJson = JSON.parse(data);
+        for (let d in actualJson.data) {
+            console.log("The user's id is ", actualJson.data[d].id);
+            console.log("User's email is ", actualJson.data[d].email);
+            console.log("User's first_name is ", actualJson.data[d].first_name);
+            console.log("User's last_name is", actualJson.data[d].last_name);
+            console.log("User's avatar ", actualJson.data[d].avatar);
+        }
+
+    })
+    .catch((error) => {
+        console.log("Error fetching the user details", error);
+    });
