@@ -58,13 +58,6 @@ Promise.race([getUserDetail1(), getUserDetail2()])
 .catch((error) => {
     console.log("Error fetching the user details", error);
 });
-
-
-// let userDetail = () => new Promise((resolve, reject) => {
-//     for (let detail of getUserDetail1) {
-//         console.log(detail);
-//     }
-// })
 getUserDetail2()
     .then((result) => {
         const {data} = result;
